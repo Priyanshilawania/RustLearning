@@ -93,18 +93,36 @@ fn main() {
 //     let num = 5;
 
 //STRINGS~~~~~~~~~~~~~~~~~~~~~~~~
-let str: &str = "hello world";
-let string: String = String:: from("Hello World");
+// let str: &str = "hello world";
+// let string: String = String:: from("Hello World");
 
 
-let slice = &string[..6];
-slice.len();
+// let slice = &string[..6];
+// slice.len();
 
-string.push('1');
-string.push_str("! Bob");
-string=string.replace("hello","bye");
-println!("{}", string);
+// string.push('1');
+// string.push_str("! Bob");
+// string=string.replace("hello","bye");
+// println!("{}", string);
 
+
+
+
+//for statements~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//if statements~~~~~~~~~
+
+let n = 3;
+if n>0{
+    println!("greater than 0");
+
+}
+else if n<0 {
+    println!("less than 0");
+}
+else{
+    println!("is 0")
+}
  }
 
 
