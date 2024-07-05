@@ -61,15 +61,21 @@ fn main() {
 
 //FUNCTIONS~~~~~~~~~~~~~~~~~~~~~~~~~
 
-println!("{}", is_even(2));
+// println!("{}", is_even(2));
 
+// }
+
+// pub fn is_even(num: u8) -> bool {
+//     let digit: u8 = num% 2;
+//     digit == 0 // return bool
+// }
+
+//MUTABILITY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+LET mut NUM=5;//using the keyword mut
+num=3;
+println!("{}",num)
 }
-
-pub fn is_even(num: u8) -> bool {
-    let digit: u8 = num% 2;
-    digit == 0 // return bool
-}
-
 
 
  
