@@ -72,9 +72,25 @@ fn main() {
 
 //MUTABILITY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-LET mut NUM=5;//using the keyword mut
-num=3;
-println!("{}",num)
+// LET mut NUM=5;//using the keyword mut
+// num=3;
+// println!("{}",num);
+
+
+//ARRAYS AND SLICES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+let arr =[0,1,2];//know the length
+let slice= &arr[1..3];//[1,2] dont know the length 
+borrowing_slice(arr,slice);
+
+}
+fn borrowing_slice(arr:[u8; 4], slice: &[u8]){
+
+    println!("{:?}", arr);
+    println!("{:?}", slice);
+    println!("length: {}", slice[1]);
+    //slice
+    let num = 5;
 }
 
 
