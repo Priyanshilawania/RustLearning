@@ -79,19 +79,33 @@ fn main() {
 
 //ARRAYS AND SLICES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-let arr =[0,1,2];//know the length
-let slice= &arr[1..3];//[1,2] dont know the length 
-borrowing_slice(arr,slice);
+// let arr =[0,1,2];//know the length
+// let slice= &arr[1..3];//[1,2] dont know the length 
+// borrowing_slice(arr,slice);
 
-}
-fn borrowing_slice(arr:[u8; 4], slice: &[u8]){
+// }
+// fn borrowing_slice(arr:[u8; 4], slice: &[u8]){
 
-    println!("{:?}", arr);
-    println!("{:?}", slice);
-    println!("length: {}", slice[1]);
-    //slice
-    let num = 5;
-}
+//     println!("{:?}", arr);
+//     println!("{:?}", slice);
+//     println!("length: {}", slice[1]);
+//     //slice
+//     let num = 5;
+
+//STRINGS~~~~~~~~~~~~~~~~~~~~~~~~
+let str: &str = "hello world";
+let string: String = String:: from("Hello World");
+
+
+let slice = &string[..6];
+slice.len();
+
+string.push('1');
+string.push_str("! Bob");
+string=string.replace("hello","bye");
+println!("{}", string);
+
+ }
 
 
  
