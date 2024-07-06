@@ -146,15 +146,37 @@ fn main() {
 
 
 
-// MATCH STATEMENT~~~~~~~~~~~~~
-LET I =5;
-match i {
-    0=> println!("0"),
-    1|2=> println!("1,2"),
-    3..=4=> println!("3,4"),
-    _ =>println!("default")
-}
+// // MATCH STATEMENT~~~~~~~~~~~~~
+// LET I =5;
+// match i {
+//     0=> println!("0"),
+//     1|2=> println!("1,2"),
+//     3..=4=> println!("3,4"),
+//     _ =>println!("default")
+// }
 
+//STRUCTURE~~~~~~~~~~~~~~~~~
+ let name = String::from("Bird");
+ let bird = bird{name:"Bird, attack:5"};
+ bird.print_name();
+ 
+
+ }
+
+ struct Bird{
+    name:String,
+    attack:u64
+ }
+
+ impl  Bird{
+    fn print_name(&self){
+        println!("{}", self.name);
+    }
+    impl Bird{
+        fn print_name(&self){
+            println!("{}", self.name);
+        }
+    }
  }
 
 
